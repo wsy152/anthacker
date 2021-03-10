@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520271569601",
+    "project_id": "fir-teste-e3aef",
+    "storage_bucket": "fir-teste-e3aef.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520271569601:android:bcbe9c81372f010e6cea40",
+        "android_client_info": {
+          "package_name": "com.example.antihacherapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520271569601-3bihtuqlqqkh44cfma1f8a5el2s03qnp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmiStNTjAgn7cpSpDXlnJty-XBQ5wtm3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520271569601-3bihtuqlqqkh44cfma1f8a5el2s03qnp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
