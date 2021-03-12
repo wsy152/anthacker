@@ -32,7 +32,7 @@ class LoginPage00 extends StatelessWidget {
                       MyTextoLogin(),
                       Padding(padding: EdgeInsets.fromLTRB(0, 30, 0, 0)),
                       MyButton(
-                        texto: 'Criar Conta',
+                        texto: Text('Criar Conta'),
                         onClickButton: () {
                           push(context, LoginCadastro());
                         },
@@ -40,7 +40,7 @@ class LoginPage00 extends StatelessWidget {
                       ),
                       Padding(padding: EdgeInsets.fromLTRB(0, 5, 0, 0)),
                       MyButton(
-                        texto: 'Login',
+                        texto: Text('Login'),
                         onClickButton: () {
                           push(context, LoginPage());
                         },

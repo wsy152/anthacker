@@ -32,10 +32,16 @@ dependencies:
   cloud_firestore: ^1.0.1
   firebase_storage: ^8.0.0
   firebase_auth: ^1.0.1
+  mobx: ^1.2.1+4
+  flutter_mobx: ^1.1.0+2
+  provider: ^4.0.4
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  mobx_codegen: ^1.1.2
+  build_runner: ^1.11.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

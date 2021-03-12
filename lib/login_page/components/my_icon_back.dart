@@ -1,3 +1,5 @@
+import 'package:antihacherapp/global/myNav.dart';
+import 'package:antihacherapp/login_page/view/login_page01.dart';
 import 'package:flutter/material.dart';
 
 class MyIconBack extends StatelessWidget {
@@ -9,7 +11,9 @@ class MyIconBack extends StatelessWidget {
         color: Colors.black,
         size: 30,
       ),
-      onPressed: () => Navigator.of(context).pop(),
+      onPressed: () {
+        push(context, LoginPage());
+      },
     );
   }
 }

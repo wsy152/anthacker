@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyButton extends StatelessWidget {
-  final String texto;
+  final Widget texto;
   final Color corTexto;
   final MaterialStateProperty<Color> backgroundColor;
 
@@ -18,7 +18,7 @@ class MyButton extends StatelessWidget {
       width: 300,
       child: ElevatedButton(
         onPressed: onClickButton,
-        child: Text(texto, style: TextStyle(color: corTexto)),
+        child: texto,
         style: ButtonStyle(
           backgroundColor: backgroundColor, //backgroundColor,
         ),

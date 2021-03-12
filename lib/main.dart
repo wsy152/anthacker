@@ -1,12 +1,15 @@
 //import 'package:antihacherapp/home_page/home_page.dart';
 
 import 'package:antihacherapp/login_page/view/login_page00.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 //import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 //import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
