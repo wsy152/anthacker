@@ -101,7 +101,10 @@ class _LoginPageState extends State<LoginPage> {
                         ? CircularProgressIndicator(
                             valueColor: AlwaysStoppedAnimation(Colors.white),
                           )
-                        : Text('Entrar'),
+                        : Text(
+                            'Entrar',
+                            //style: TextStyle(color: Colors.blue),
+                          ),
                     onClickButton: _loginStore.loginPressed,
                     backgroundColor:
                         MaterialStateProperty.all<Color>(Colors.blue),

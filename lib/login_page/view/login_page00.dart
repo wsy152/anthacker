@@ -42,7 +42,7 @@ class LoginPage00 extends StatelessWidget {
                       MyButton(
                         texto: Text('Login'),
                         onClickButton: () {
-                          push(context, LoginPage());
+                          push(context, LoginPage(), replace: true);
                         },
                         corTexto: Colors.blue[900],
                         backgroundColor:

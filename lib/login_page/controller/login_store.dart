@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:mobx/mobx.dart';
 part 'login_store.g.dart';
 
@@ -49,8 +50,19 @@ abstract class _LoginStoreBase with Store {
     loading = true;
     loginIn = false;
     await Future.delayed(Duration(seconds: 2));
-    loading = false;
-    loginIn = true;
+    FirebaseAuth auth = FirebaseAuth.instance;
+    auth
+        .createUserWithEmailAndPassword(
+      email: _email,
+      password: _senha,
+    )
+        .then((firebaseUser) {
+      loading = false;
+      loginIn = true;
+    }).catchError((error) {
+      loading = false;
+      print('deu ruim');
+    });
   }
 
   @action
